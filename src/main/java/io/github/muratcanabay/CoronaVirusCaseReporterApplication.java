@@ -1,4 +1,4 @@
-package com.muratcanabay;
+package io.github.muratcanabay;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

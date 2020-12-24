@@ -1,7 +1,7 @@
-package com.muratcanabay.controller;
+package io.github.muratcanabay.controller;
 
-import com.muratcanabay.domain.Reports;
-import com.muratcanabay.service.CoronaVirusDataService;
+import io.github.muratcanabay.domain.Reports;
+import io.github.muratcanabay.service.CoronaVirusDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

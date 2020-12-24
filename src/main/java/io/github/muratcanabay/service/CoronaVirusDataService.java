@@ -1,6 +1,6 @@
-package com.muratcanabay.service;
+package io.github.muratcanabay.service;
 
-import com.muratcanabay.domain.Reports;
+import io.github.muratcanabay.domain.Reports;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.scheduling.annotation.Scheduled;

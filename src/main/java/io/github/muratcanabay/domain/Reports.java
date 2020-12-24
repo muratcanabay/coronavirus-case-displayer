@@ -1,4 +1,4 @@
-package com.muratcanabay.domain;
+package io.github.muratcanabay.domain;
 
 public class Reports {
     private String state;
