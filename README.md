@@ -2,9 +2,11 @@
 
 [logo]: https://i.hizliresim.com/Bvlnq3.png "Coronavirus Case Reporter"
 
-# coronavirus-case-reporter
+## Projenin amacı
 
 Bu uygulama dünya üzerindeki coronavirüs salgını verilerini ülke bazında gösterir.
+
+_Not: Proje java 11 ile gelen **java.net.http** kütüphanesine ihtiyaç duymaktadır. Bu yüzden, uygulamanın çalışabilmesi için minimum jdk versiyonu 11 olmalıdır._ 
 
 ## Datasets
 
