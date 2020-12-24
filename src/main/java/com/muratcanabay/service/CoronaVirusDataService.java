@@ -1,21 +1,6 @@
-/*
- * Copyright 2020 Universal Bilgi Teknolojileri.
- *
- * UKL 1.1 lisansı ile lisanslanmıştır. Bu dosyanın lisans koşullarına uygun
- * olmayan şekilde kullanımı yasaklanmıştır. Lisansın bir kopyasını aşağıdaki
- * linkten edinebilirsiniz.
- *
- * http://www.uni-yaz.com/lisans/ukl_1_1.pdf
- *
- * Yasalar aksini söylemediği veya yazılı bir sözleşme ile aksi belirtilmediği sürece,
- * bu yazılım mevcut hali ile hiç bir garanti vermeden veya herhangi bir şart ileri
- * sürmeden dağıtılır. Bu yazılımın edinim izinleri ve limitler konusunda lisans
- * sözleşmesine bakınız.
- *
- */
-package com.muratcanabay.coronaviruscasereporter.service;
+package com.muratcanabay.service;
 
-import com.muratcanabay.coronaviruscasereporter.domain.Reports;
+import com.muratcanabay.domain.Reports;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -30,13 +15,6 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * CoronaVirusDataService
- *
- * @author Murat Can Abay
- * @since 0.21.0
- */
 
 @Service
 public class CoronaVirusDataService {
@@ -111,10 +89,11 @@ public class CoronaVirusDataService {
 
     /**
      * Calculates total case number in the world.
+     *
      * @param reportsList
      * @return totalCaseWorld
      */
-    public int getTotalCase(List<Reports> reportsList){
+    public int getTotalCase(List<Reports> reportsList) {
         int totalCaseWorld = reportsList.stream().mapToInt(reports -> Math.toIntExact(reports.getTotalCase())).sum();
         return totalCaseWorld;
     }
